@@ -25,7 +25,7 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20
 texts = text_splitter.split_documents(pages)
 
 # ✅ 벡터 저장소 생성
-embeddings = OpenAIEmbeddings(openai_api_key=api_key)
+embeddings = OpenAIEmbeddings(openai_api_key=st.secrets["OPENAI_API_KEY"])
 db = FAISS.from_documents(texts, embeddings)
 
 # ✅ 질의응답 체인 구성
