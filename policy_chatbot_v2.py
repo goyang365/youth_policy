@@ -13,7 +13,12 @@ st.title("📄 청년공약 기반 정책 챗봇")
 st.markdown("💬 PDF 내용을 기반으로 GPT가 답변해드립니다.")
 
 # ✅ API 키 입력 (비밀번호 형식으로 숨김)
+<<<<<<< HEAD
 openai.api_key = st.secrets["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"]
+=======
+openai.api_key = st.secrets["OPENAI_API_KEY"]
+
+>>>>>>> 71a2419 (add secrets.toml and initial deploy setup)
 
 
     # ✅ PDF 로딩 및 처리
