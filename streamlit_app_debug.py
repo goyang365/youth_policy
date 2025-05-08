@@ -8,7 +8,7 @@ from langchain.chains import RetrievalQA
 # ✅ 디버그 모드 여부 (True면 실제 GPT 호출, False면 모의 응답)
 USE_OPENAI = False
 
-st.title("📄 청년공약 기반 정책 챗봇 (디버그 모드)")
+st.title("📄나! 청년공약을 알려주는 챗봇")
 st.markdown("💬 PDF 내용을 기반으로 GPT가 답변해드립니다. (API 없이 테스트)")
 
 # ✅ PDF 로딩 및 처리
@@ -48,7 +48,7 @@ if question:
         if USE_OPENAI and qa:
             answer = qa.run(question)
         else:
-            answer = f"💡 [모의 응답] '{question}' 에 대한 답변입니다. 실제 GPT 없이 테스트 중입니다."
+            
         st.success(answer)
 else:
     st.info("테스트용 질문을 입력해 보세요.")
