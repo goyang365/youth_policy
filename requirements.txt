@@ -1,5 +1,6 @@
-openai
 streamlit
 langchain
-PyPDF2
-faiss-cpu
+openai
+tiktoken
+pypdf
+langchain-community
